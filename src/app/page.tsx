@@ -8,12 +8,17 @@ export default function Home() {
         Leon Hebeisen
       </h1>
       <p className="max-w-md text-neutral-400">
-        Ich bin ein Lernender Applikationsentwickler, mein Portfolio ist auf dem
-        Weg.
+        Ich bin Leon, mein Portfolio ist auf dem Weg:)
       </p>
+      <div className="flex w-full max-w-sm items-center gap-4">
+        <hr className="flex-1 border-neutral-700" />
+        <p className="text-neutral-400">check me out</p>
+        <hr className="flex-1 border-neutral-700" />
+      </div>
       <div className="flex gap-4">
         <a
           href="https://github.com/lelelon225"
+          aria-label="Leon Hebeisen auf GitHub"
           className="rounded-full border border-neutral-700 px-5 py-2 text-sm transition hover:border-neutral-400"
         >
           GitHub
@@ -21,6 +26,7 @@ export default function Home() {
         <a
           href="mailto:contact@leonhebeisen.com"
           className="rounded-full bg-neutral-100 px-5 py-2 text-sm text-neutral-950 transition hover:bg-neutral-300"
+          aria-label="Leon Hebeisen auf Mail kontaktieren"
         >
           Contact
         </a>

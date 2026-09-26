@@ -12,18 +12,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const TITLE = "Leon Hebeisen – Lernender Applikationsentwickler";
+const DESCRIPTION =
+  "Leon Hebeisen, Lernender Applikationsentwickler EFZ bei Noser Young. Portfolio mit Projekten in Spring Boot, React und TypeScript.";
+
 export const metadata: Metadata = {
-  title: "Leon Hebeisen – Lernender Applikationsentwickler",
-  description:
-    "Leon Hebeisen, Lernender Applikationsentwickler EFZ. Portfolio.",
+  title: TITLE,
+  description: DESCRIPTION,
   metadataBase: new URL("https://leonhebeisen.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Leon Hebeisen – Lernender Applikationsentwickler",
-    description:
-      "Leon Hebeisen, Lernender Applikationsentwickler EFZ. Portfolio.",
+    title: TITLE,
+    description: DESCRIPTION,
     url: "https://leonhebeisen.com",
     siteName: "Leon Hebeisen",
     locale: "de_CH",
@@ -37,6 +39,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/og.png"],
+  },
 };
 
 const jsonLd = {
@@ -49,6 +57,7 @@ const jsonLd = {
   sameAs: [
     "https://github.com/lelelon225",
     "https://www.linkedin.com/in/leonhebeisen",
+    "https://noseryoung.ch/team-members/leon-hebeisen/",
   ],
 };
 
@@ -61,7 +70,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
         />
         {children}
       </body>
