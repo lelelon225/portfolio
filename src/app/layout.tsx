@@ -13,15 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Leon Hebeisen – Applikationsentwickler",
-  description: "Leon Hebeisen, Applikationsentwickler EFZ. Portfolio.",
+  title: "Leon Hebeisen – Lernender Applikationsentwickler",
+  description:
+    "Leon Hebeisen, Lernender Applikationsentwickler EFZ. Portfolio.",
   metadataBase: new URL("https://leonhebeisen.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Leon Hebeisen – Applikationsentwickler",
-    description: "Leon Hebeisen, Applikationsentwickler EFZ. Portfolio.",
+    title: "Leon Hebeisen – Lernender Applikationsentwickler",
+    description:
+      "Leon Hebeisen, Lernender Applikationsentwickler EFZ. Portfolio.",
     url: "https://leonhebeisen.com",
     siteName: "Leon Hebeisen",
     locale: "de_CH",
@@ -42,7 +44,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Leon Hebeisen",
   url: "https://leonhebeisen.com",
-  jobTitle: "Applikationsentwickler EFZ",
+  jobTitle: "Lernender Applikationsentwickler EFZ",
   worksFor: { "@type": "Organization", name: "Noser Young" },
   sameAs: [
     "https://github.com/lelelon225",

@@ -8,7 +8,8 @@ export default function Home() {
         Leon Hebeisen
       </h1>
       <p className="max-w-md text-neutral-400">
-        Application developer in training. My portfolio is on its way.
+        Ich bine ein Lernender Applikationsentwickler, mein Portfolio ist auf
+        dem Weg.
       </p>
       <div className="flex gap-4">
         <a
